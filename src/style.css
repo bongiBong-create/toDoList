@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "roboto";
+    src: url("./fonts/RobotoMono-Medium.ttf");
+}
+
+* {
+    font-family: "roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.tab  {
+    padding: 5px 2px;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.tab:hover  {
+    background-color: rgb(128, 128, 128, 0.5);
+}
