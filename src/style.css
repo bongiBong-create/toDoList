@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
     font-family: "roboto";
     src: url("./fonts/RobotoMono-Medium.ttf");
@@ -14,6 +15,28 @@
     font-size: 20px;
 }
 
+.theme {
+    background: transparent;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;   
+}
+
+.dark {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.dark__light {
+    background-color: rgb(0, 0, 0, .9);
+    color: #fff;
+}
+
+.dark__light .tasks .task{
+    background-color: rgb(38, 43, 47);
+}
+
 .tab  {
     padding: 5px 2px;
     cursor: pointer;
@@ -23,4 +46,93 @@
 
 .tab:hover  {
     background-color: rgb(128, 128, 128, 0.5);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input input {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.input label {
+    font-size: 14px;
+}
+
+dialog {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    border: 2px solid gray;
+    top: 20%;
+    left: 40%;
+    max-width: 200px;
+    padding: 16px;
+    gap: 12px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.task {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(141, 162, 183);
+    border: 2px solid slategrey;
+    height: 600px;
+}
+
+.info {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.priority {
+    margin-right: 40px;
+}
+
+.add__btn {
+    background: transparent;
+    border-radius: 20px;
+    border-width: 0;
+    border: 2px solid gray;
+    transition: all .3s;
+    cursor: pointer;
+    width: 150px;
+}
+
+.add__btn:hover {
+    border: 2px solid rgba(226, 232, 240);
+    background-color: rgba(226, 232, 240) ;
+    color: #fff;
+}
+
+.today__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 50px;
 }

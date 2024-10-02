@@ -8,25 +8,33 @@
 </head>
 
 <body class="flex h-svh">
-    <nav class="flex flex-col items-start justify-start gap-5 p-2 w-48 bg-slate-200">
+    <nav class="flex flex-col items-start justify-start gap-2 p-2 pl-4 w-48 bg-slate-200">
+        <button class="theme"></button>
+        <h1 class="text-center w-full text-2xl mb-3">Lot-To-Do</h1>
         <div class="avatar w-full">
             <div class="avatar__box flex items-center gap-5">
                 <img class="rounded-full" src="./imgs/ава.jpg" alt="logo" width="40">
                 <div class="avatar__name">Bongi</div>
             </div>
         </div>
-        <div class="tab today flex justify-between w-full">
+        <div class="tab today flex justify-between w-full" id="today">
             <span>Today</span>
         </div>
-        <div class="tab projects flex justify-between w-full">
+        <div class="tab projects flex justify-between w-full" id="projects">
             <span>Projects</span>
         </div>
-        <div class="tab dreams flex justify-between w-full">
+        <div class="tab general flex justify-between w-full" id="general">
+            <span>General</span>
+        </div>
+        <div class="tab dreams flex justify-between w-full" id="dreams">
             <span>Dreams</span>
         </div>
     </nav>
 
-    <main class="main flex flex-col items-center justify-start w-full" id="root"></main>
+    <main class="main flex flex-col items-start justify-start flex-1 p-5 relative" id="root">
+        
+    </main>
+
 </body>
 
 </html>
